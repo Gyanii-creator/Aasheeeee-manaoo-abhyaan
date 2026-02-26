@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Only For You 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Doodles -->
+<div class="doodles">
+    <span>💖</span>
+    <span>💗</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>💞</span>
+    <span>⭐</span>
+</div>
+
+<!-- NAME SCREEN -->
+<div class="card" id="start">
+    <h1>Hiiieeeeee meriiii sweetieepieeeee🌸</h1>
+    <p>Only special people can continue...</p>
+    <input type="text" id="nameInput" placeholder="Type your name">
+    <button onclick="start()">Unlock 💌</button>
+</div>
+
+<!-- QUESTION SCREEN -->
+<div class="card hidden" id="questions">
+    <h2 id="greet"></h2>
+    <p id="questionText"></p>
+
+    <div class="buttons">
+        <button id="yesBtn" onclick="next()">Yes 💖</button>
+        <button id="noBtn" onmouseover="moveNo()">No 😒</button>
+    </div>
+
+    <p class="progress" id="progress"></p>
+</div>
+
+<!-- FINAL SCREEN -->
+<div class="card hidden" id="final">
+    <h2>YAYYYYY 😭💗</h2>
+    <p id="finalMessage"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
