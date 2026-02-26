@@ -29,8 +29,13 @@ const noTexts = [
 ];
 
 function start(){
-    name = document.getElementById("nameInput").value;
-    if(name === "") return alert("Name toh likho 😤");
+    name = document.getElementById("nameInput").value.trim();
+
+    // Only allow Aasheee
+    if(name !== "Aasheee"){
+        alert("Only my Aasheee can open this 😌💗");
+        return;
+    }
 
     document.getElementById("start").classList.add("hidden");
     document.getElementById("questions").classList.remove("hidden");
